@@ -1,0 +1,24 @@
+{% extends 'base.html.twig' %}
+{% block title %}Page de Connexion{% endblock %}
+{% block stylesheets %}
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="exo3.css">
+	<meta charset="UTF-8">	
+{% endblock %}
+{% block body %}
+<div div class="container-fluid" >
+	<div class="row">
+		<div class="col-sm-4">
+  		</div>
+		<div class="group col-sm-4">
+			<h3>Mail innexistant ou Mot de passe incorrecte</h3>
+			{{ form_start(form)}}
+			{{ form(form) }}
+			{{ form_widget(form.save, {'attr': {'class': 'btn btn-primary'}}) }}
+		  	{{ form_end(form) }}
+  		</div>
+  		<div class="col-sm-4">
+  		</div>
+	</div>
+</div>	   
+{% endblock %}

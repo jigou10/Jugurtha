@@ -1,0 +1,34 @@
+{% extends 'base.html.twig' %}
+{% block title %}Rendez-Vous{% endblock %}
+{% block stylesheets %}
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="exo3.css">
+	<meta charset="UTF-8">	
+{% endblock %}
+{% block body %}
+	
+  	<nav class="navbar navbar-dark bg-dark">
+ 	 	<a class="navbar-brand" href="#img12">Politique de confidentialité</a>
+ 	 	<a class="navbar-brand" href="#img12">Pourquoi Notre Site</a>
+ 	 	
+  		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    	<span class="navbar-toggler-icon"></span>
+  		</button>
+ 	 <!-- Navbar content -->
+	</nav>
+    
+	<a href="{{ path ('connexion') }}"> <input type="button" class="boutton" value="Connectez-vous" name="Connectez-vous" > </a>	<br/><br/>
+   		
+  </div>
+</nav>
+<div>
+	<h2>Immobilier</h2><br/><br/>
+	<h1 align="center">
+		Prennez Votre Rendez-Vous Pour visiter votre nouvel Appart
+	</h1><br/><br/><br/><br/>
+
+	
+</div>
+	<div class="center"> <a href="{{ path ('inscription') }}" id="a"> <input type="button" class="btn btn-primary btn-warning btn-lg" value="Inscrivez-vous" name="Inscrivez-vous" > </a> </div>
+	<br/><br/>
+{% endblock %}

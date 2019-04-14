@@ -1,0 +1,80 @@
+{% extends 'base.html.twig' %}
+{% block title %}Page d'Inscription{% endblock %}
+{% block stylesheets %}
+
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css"><input required="required" type="text" name="nom" class="input">
+	<scriotstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+	<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+	
+	<meta charset="UTF-8">	
+{% endblock %}
+{% block body %}
+	<div class="container-fluid">
+		<div class="container">
+			<div class="formBox">
+						<div class="row">
+							<div class="col-sm-12">
+								<h1>Inscription</h1>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-sm-6">
+								<div class="inputBox ">
+									<input required="required" type="text" name="nom" class="input">{{ 
+								</div>	
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-sm-6">
+								<div class="inputBox ">
+									{{ form_widget(form) }}
+								</div>		
+							</div>
+						</div>			
+    					
+    					<div class="row">
+							<div class="col-sm-6">
+								<div class="inputBox ">
+									{{ form_widget(form) }}
+								</div>		
+							</div>
+						</div>
+    					
+    					<div class="row">
+							<div class="col-sm-6">
+								<div class="inputBox ">
+									{{ form_widget(form) }}
+								</div>		
+							</div>
+						</div>	
+    					
+    					<div class="row">
+							<div class="col-sm-6">
+								<div class="inputBox ">
+									{{ form_widget(form) }}
+								</div>		
+							</div>
+						</div>
+    					
+    					<div class="row">
+							<div class="col-sm-6">
+								<div class="inputBox ">
+									{{ form_widget(form) }}
+								</div>		
+							</div>
+						</div>
+    					
+    					<div class="row">
+							<div class="col-sm-6">
+								<div class="inputBox ">
+									{{ form_end(form) }}
+								</div>		
+							</div>
+						</div>
+     		</div>
+     	</div>
+    </div> 	
+
+{% endblock %}

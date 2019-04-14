@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+{% block title %}Page de Connexion{% endblock %}
+{% block stylesheets %}
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="exo3.css">
+	<meta charset="UTF-8">	
+{% endblock %}
+{% block body %}
+	<h1>Azul fellawen </h1>
+	{% for s in public %}
+		<p>{{s.nom }}: {{ s.mail }}</p>
+	{% endfor %}
+{% endblock %}	
